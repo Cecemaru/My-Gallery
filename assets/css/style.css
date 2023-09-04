@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+:root {
+  --body-font: "Montserrat", sans-serif;
+
+  --normal-font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ====== Main Css ==== */
+
+main {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  max-width: 960px;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+header figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-section figure {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-section figure .profile-img img {
+  max-width: 6.375rem;
+  border-radius: 1rem;
+}
+
+.profile-title .h1 {
+  font-size: 0.875rem;
+  margin-bottom: 0.3rem;
+}
+
+.profile-title .h3 {
+  font-size: 0.625rem;
+}
+
+figcaption {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.user {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.user .user-info {
+  background-color: lightgrey;
+  padding: 0.625rem;
+  width: 4.875rem;
+  text-align: center;
+  border-radius: 0.75rem;
+}
+
+.user-info :is(h2, h3) {
+  font-size: 0.75rem;
+}
+
+.images-section figure {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.images-section figure img {
+  border-radius: 20px;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #b9bdcf;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 47em) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .images-section figure {
+    gap: 2.2rem;
+  }
+
+  .profile-section figure .profile-img img {
+    max-width: 10.5rem;
+  }
+}
